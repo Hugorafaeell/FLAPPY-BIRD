@@ -1,0 +1,73 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #222;
+  color: #eee;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container do tabuleiro */
+#gameBoard {
+  margin: 20px auto;
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Cartas */
+.card {
+  background: #444;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.card.flipped {
+  background: #fff;
+  color: #222;
+  cursor: default;
+}
+
+.card.matched {
+  background: #4caf50;
+  color: #fff;
+  cursor: default;
+}
+
+button {
+  background-color: #2196f3;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b7dda;
+}
+
+#message {
+  font-size: 1.2rem;
+  height: 1.5rem;
+  margin-top: 10px;
+}
+
+#score {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
